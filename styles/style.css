@@ -1,4 +1,4 @@
-.page {
+﻿.page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -13,6 +13,10 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
+  align-items: center;
   /* выше установили ограничения для секции */
 }
 
@@ -23,9 +27,324 @@
 }
 
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+}
+.header{
+  background-color: #f2f2f2;
+  min-height: 600px;
+  max-height: 756px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.logo{
+  width: 183px;
+  height: 32px;
+}
+.logo_place_header{
+  position: absolute;
+  left: 64px;
+  top: 30px;
+  z-index: 3;
+}
+.header__title{
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  padding:0;
+  z-index: 3;
+  margin: 0 0 0 64px;
+}
+.header__subtitle{
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+}
+.header__link{
+  color: #2f80ed;
+  text-decoration: none;
+}
+.header__main-illustration{
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.header__square-pic{
+  width: 568px;
+  height: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 64px;
+}
+.description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two-columns{
+  justify-content: space-between;
+  display: flex;
+  width: 80%;
+}
+.two-columns__main-text{
+  width: 80%;
+  min-width: 784px;
+}
+.two-columns__brief{
+  margin: 0;
+  padding: 0;
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+}
+.two-columns__paragraph{
+  margin: 0;
+  padding: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 30px;
+}
+.two-columns__paragraph:first-child{
+  margin-top: 0;
+}
+.two-columns__paragraph:last-child{
+  margin-bottom: 0;
+}
+.description{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.two-columns__span-accent{
+  line-height: 34px;
+  font-size: 24px;;
+  font-weight: bold;
+}
+.digits{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-title{
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin:0;
+  padding:0;
+  text-align: center;
+}
+.section-subtitle{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin:0;
+  padding:0;
+  width: 60%;
+  margin-top:20px;
+  text-align: center;
+}
+.table{
+  width: 1100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.table__cell{
+  width: 250px;
+  margin-top: 60px;
+}
+.table__heading{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+  margin:0;
+  padding:0;
+}
+.table__text{
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin:0;
+  padding:0;
+  margin-top:20px
+}
+.feynman{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  position: relative;
+  background-color: #f2f2f2;
+  min-height: 890px;
+}
+.feynman__title{
+  margin-top: 100px;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  padding: 0;
+  z-index: 3;
+  text-align: center;
+  margin-bottom: 0;
+}
+.feynman__image{
+  width: 867px;
+  height: 637px;
+  position: absolute;
+  left:0;
+  bottom: 0;
+  z-index: 2;
+}
+.feynman__subtitle{
+  margin:0;
+  padding:0;
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 3;
+}
+.feynman__link{
+  margin:0;
+  padding: 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color:#2f80ed;
+  position:absolute;
+  top: 50%;
+  right: 48px;
+  z-index: 3;
+}
+.kaufman{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+}
+.section-title_theme_dark{
+  margin-top: 90px;
+  z-index: 3;
+  color:white;
+}
+.section-subtitle_theme_dark{
+  color:white;
+}
+/* знаю что не обязательно прописывать цвет, просто покажу вам, что знаю зачем нужны модификаторы */
+.table_theme_dark{
+  margin-bottom: 90px;
+  color: white;
+  z-index: 3;
+}
+.table__cell_theme_dark{
   width: 200px;
   color: white;
-  margin-right: 0;
   margin-top: 80px;
+}
+.table__heading_theme_dark{
+  color:white;
+ }
+.table__text_theme_dark{
+ color:white
+}
+.kaufman__triangle{
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  top: 0;
+  right:-210px;
+  background-image: url(../images/kaufman-triangle.svg);
+  z-index:2;
+  background-size: cover;
+}
+.footer{
+  display: flex;
+  min-height: 350px;
+  color: white;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #1f1f1f;
+}
+.footer__columns{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.footer__column_content_copyright{
+  flex-basis: 711px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer__author{
+  line-height: 25px ;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+.logo_place_footer{
+  width: 183px;
+  height: 35px;
+  align-content: flex-start;
+}
+.footer__column-heading{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin:0;
+  bottom:0;
+  margin-bottom: 20px;
+}
+.footer__column-links{
+  display: flex;
+  flex-direction: column;
+}
+.footer__column-link{
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  margin:0;
+  padding:0;
+  color:white;
+}
+.footer__column-link:last-child{
+  margin-bottom: 16px;
+}
+.footer__social-icon{
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+.footer__column{
+  flex-direction: column;
+  display:flex;
 }
