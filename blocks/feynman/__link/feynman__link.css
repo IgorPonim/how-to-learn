@@ -11,3 +11,8 @@
     right: 48px;
     z-index: 3;
   }
+  .feynman__link:hover{
+    opacity: .55;
+    transition: all 1s linear;
+    color: rgb(252, 50, 0);
+}
